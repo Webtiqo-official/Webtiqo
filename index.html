@@ -24,8 +24,8 @@
 
     <div class="container">
 
-        <a class="navbar-brand" href="#">
-     <a href="#" class="logo">
+       <a class="navbar-brand" href="#">
+<a href="#" class="logo">
 <a href="#" class="logo">
   <span class="web">Web</span><span class="tiqo">tiqo</span>
 </a>
@@ -71,38 +71,63 @@
     </div>
 
 </nav> 
- <section class="hero">
+<section class="hero">
 
     <div class="hero-content">
 
-        <p class="hero-tag">
-            🚀 Begin Your Coding Adventure
-        </p>
+        <p class="hero-tag">🚀 Begin Your Coding Adventure</p>
 
         <h1>
-    Learn Web <br>
-    Development <br>
+            Learn Web <br>
+            Development <br>
+            <span>One Step at a Time</span>
+        </h1>
 
-    <span>One Step at a Time</span>
-</h1>
         <p>
-
             From HTML to React, master every skill through
             projects, challenges and an interactive roadmap.
-
         </p>
 
         <div class="hero-buttons">
+          <button class="btn-start" onclick="openPopup()">
+    Start Learning
+</button>
+<div id="welcomePopup" class="popup">
 
-            <button class="btn-start">
-                Start Learning
-            </button>
+    <div class="popup-content">
+
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+
+        <h2>🚀 Welcome to Webtiqo!</h2>
+
+        <p>
+            Ready to start your Frontend Development journey?
+        </p>
+
+        <p>
+            Learn <strong>HTML</strong>,
+            <strong>CSS</strong>,
+            <strong>Bootstrap</strong>, and
+            <strong>JavaScript</strong> step by step.
+        </p>
+
+        <button class="btn-start" onclick="goToRoadmap()">
+            Let's Start
+        </button>
+
+    </div>
+
+</div>
 
 
+</div>
+
+</div>
         </div>
 
     </div>
-    <div class="hero-image">
+
+<div class="hero-image" id="heroImage">
     <img src="imgs/map.png" class="roadmap" alt="Roadmap">
 </div>
 
@@ -167,7 +192,10 @@
     <h1 class="skills-title">💻 My Skills</h1>
 
     <div class="skills-container">
-
+ <p class="skills-description">
+        Frontend development focuses on creating the visual and interactive parts of a website that users see and use. It involves learning <strong>HTML</strong> to build the structure of web pages, <strong>CSS</strong> to design attractive and responsive layouts, <strong>Bootstrap</strong> to develop mobile-friendly interfaces quickly using pre-built components, and <strong>JavaScript</strong> to add dynamic functionality, animations, form validation, and user interactions. Together, these technologies form the foundation of modern web development and help create fast, responsive, and engaging websites.
+    </p>
+    <br><br><br>
         <div class="skill">
             <div class="skill-info">
                 <span>🌿 HTML</span>
@@ -217,8 +245,8 @@
         <div class="footer-box">
             <h3>About Us</h3>
             <p>
-                We help you learn web development step by step with modern UI designs and real projects.
-            </p>
+Master the core frontend technologies required to build modern, responsive, and interactive websites.
+</p>
         </div>
 
         <!-- Quick Links -->
@@ -244,10 +272,10 @@
         <div class="footer-box">
             <h3>Follow Us</h3>
             <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Webtiqo-official"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/bhargavi230chowdary/"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
 
@@ -257,6 +285,7 @@
         <p>© 2026 Your Portfolio Website | All Rights Reserved By "Yarlagadda Sindhu Bhargavi Chowdary"</p>
     </div>
 </footer>
+<script src="script.js"></script>
 </body>
 
 </html>
